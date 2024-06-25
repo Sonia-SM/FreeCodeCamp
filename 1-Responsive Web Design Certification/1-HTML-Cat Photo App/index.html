@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Photo App</title>
+</head>
+<body>
+    <main>
+        <h1>Cat Photo App</h1>
+        <section>
+            <h2>Cat Photos</h2>
+            <!-- TODO: Add link to cat photos -->
+            <p>See more<a href="https://freecatphotoapp.com" target="_blank">cat photos</a> in our gallery. </p>
+            <figure>
+                <img src="images/main_cat.webp" height="400" alt="Cat Photo">
+            </figure>
+        </section>
+
+        <section>
+            <h2>Cat Lists </h2>
+            <h3>Things cats love:</h3>
+            <ul>
+                <li>cat nip</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+            
+            <!-- The figure element represents self-contained content and will allow you to associate an image with a caption. -->
+            <figure>
+                <img src="images/laser pointer.webp" alt="cat playing with laser pointers">
+                <figcaption>cats <em>love</em> playing with laser pointers.</figcaption>
+            </figure>
+
+            <h3>Top 3 things cats hate: </h3>
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+
+            <figure>
+                <img src="images/cats fighting.gif" height="300" alt="cats throwing hands">
+                <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+           <h2>Cat Form </h2>
+            <form action="#">
+                <!-- The fieldset element is used to group related inputs and labels together in a web form. fieldset elements are block-level elements, meaning that they appear on a new line. -->
+                <!-- The legend element acts as a caption for the content in the fieldset element. It gives users context about what they should enter into that part of the form. -->
+
+                <!-- selected by default, you need to add the checked attribute to it.  -->
+                <fieldset>
+                    <legend>Is your cat an indoor or outdoor cat?</legend>
+                    <label for=""><input type="radio" id="indoor" name="indoor-outdoor" value="indoor" checked>Indoor</label>
+                    <label for=""><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Outdoor</label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>What's your cat's personality?</legend>
+                    <!-- Add the name attribute with the value personality to the checkbox input element.
+                    While you won't notice this in the browser, doing this makes it easier for a server to process your web form, especially when there are multiple checkboxes. -->
+                    <input type="checkbox" id="loving" name="personality" value="loving" checked> <label for="loving">Loving</label>
+                    <input type="checkbox" id="lazy" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+                    <input type="checkbox" id="energetic" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+
+                    <!-- Like radio buttons, form data for selected checkboxes are name / value attribute pairs. While the value attribute is optional, it's best practice to include it with any checkboxes or radio buttons on the page.
+                    Add a value attribute to each checkbox. For convenience, set each checkbox's value attribute to the same value as its id attribute. -->
+                </fieldset>
+                
+        
+                <input type="text" name="Cat photo URL" placeholder="Cat photo URL" required>
+                <!-- Add a button element with the text Submit below the input element. The default behavior of clicking a form button without any attributes submits the form to the location specified in the form's action attribute. -->
+                <button type="submit">Submit</button>
+                <!-- <input type="submit" name="" id=""> -->
+            </form>
+        </section>
+    </main>
+ 
+
+   <footer>
+    <p>No Copyright - <a href="soniamaharjan.com">Sonia Maharjan</a></p>
+   </footer>
+
+
+</body>
+</html>
